@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li.active {
-    border-right: 5px solid blue;
+    
 }
 
 nav ul a {
@@ -59,7 +59,6 @@ div#content img{
     height: auto;
     margin: 0 0 15px 15px;
     padding: 3px;
-    border: 3px solid blue;
 }
 
 footer {
