@@ -72,7 +72,7 @@
             </iframe>
         </div>
     </div>
-    <h3>Google Térkép</h3>
+    <h3>Térképes elérhetőség</h3>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.8509470385686!2d18.044254!3d46.9088821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769c09c888496fb%3A0xe0d1e2be6aca1072!2sBalatoni%20Haj%C3%B3z%C3%A1si%20Zrt.!5e0!3m2!1shu!2shu!4v1713450000000"
         width="600"
@@ -82,5 +82,6 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+    <a target="_blank" href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwj4m82Sm_qTAxUAAAAAHQAAAAAQCA..i&pvq=Cg0vZy8xMWh5dDZ2al9iIgwKBmJhaGFydBACGAM&lqi=CgZiYWhhcnRI6oe1k_evgIAIWhAQACIGYmFoYXJ0KgQIAhAAkgEQc2hpcHBpbmdfY29tcGFueQ&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=hu&sa=X&ftid=0x4769c09c888496fb:0xe0d1e2be6aca1072">Nagyobb térkép</a>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
