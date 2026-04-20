@@ -1,6 +1,37 @@
-<h2>Adatok:</h2>
-<p>Ügyvezető: <strong>Valaki Az</strong></p>
-<p>E-mail: <strong>valaki.az@minihonlap.hu</strong></p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.3375296155727!2d19.66695091525771!3d46.89607994478184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da7a6c479e1d%3A0xc8292b3f6dc69e7f!2sPallasz+Ath%C3%A9n%C3%A9+Egyetem+GAMF+Kar!5e0!3m2!1shu!2shu!4v1475753185783" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-<br>
-<a target="_blank" href="https://www.google.hu/maps/place/Pallasz+Ath%C3%A9n%C3%A9+Egyetem+GAMF+Kar/@46.8960799,19.6669509,17z/data=!3m1!4b1!4m5!3m4!1s0x4743da7a6c479e1d:0xc8292b3f6dc69e7f!8m2!3d46.8960763!4d19.6691396?hl=hu">Nagyobb térkép</a>
+<div class="kapcsolat">
+    <div>
+        <h2>Kapcsolat</h2>
+        <p>Cégünk a legnagyobb hajózási társaság a Balatonon, mely közel 180 éves múltra tekint vissza. Legfőbb tevékenységi köreink: a személyhajózás, a kompközlekedés és a vitorláskikötők üzemeltetése.</p>
+    </div>
+    <div class="elerhetoseg">
+        <h2>Elérhetőségek</h2>
+        <ul>
+            <li class="address">
+                <span>Balatoni Hajózási Zrt.</span>
+            </li>
+            <li class="map">
+                <span>8600 Siófok, Krúdy sétány 2.</span>
+            </li>
+            <li class="phone">
+                <span>+36 80 310 050</span>
+            </li>
+            <li class="email">
+                <span>ugyfelszolgalat@bahart.hu</span>
+            </li>
+        </ul>
+    </div>
+    <div class="urlap">
+        <form id="kapcsolatForm" action="./logicals/kapcsolatellenor.php" method="post">
+            <input type="number" id="felhaszn_id" name="felhaszn_id" value="<?php if(isset($_SESSION['felhaszn_id'])) echo $_SESSION['felhaszn_id']; else echo -1;?>" class="fel_id">
+            <h2>Kapcsolatfelvételi űrlap</h2>
+            <label>E-mail:</label><br>
+            <input type="text" id="email" name="email" placeholder="E-mail cím"><br><br>
+            <label>Rövid információ miért kesett minket:</label><br>
+            <input type="text" id="targy" name="targy" placeholder="Tárgy"><br><br>
+            <label>Üzenet:</label><br>
+            <textarea id="uzenet" name="uzenet" placeholder="Üzenet" cols="100" rows="4"></textarea><br><br>
+            <button type="submit" id="submit">Üzenetet küldök - Várom a választ</button>
+        </form>
+    </div>
+</div>
+<script src="./script/kapcsolat.js"></script>

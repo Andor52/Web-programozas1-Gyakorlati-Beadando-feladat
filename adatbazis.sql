@@ -27,3 +27,22 @@ INSERT INTO `felhasznalok` (`id`,`csaladi_nev`,`uto_nev`,`bejelentkezes`,`jelszo
  (10,'Családi_10','Utónév_10','Login10',sha1('login10')),
  (11,'Családi_11','Utónév_11','Login11',sha1('login11')),
  (12,'Családi_12','Utónév_12','Login12',sha1('login12'));
+
+
+CREATE TABLE uzenetek (
+    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    felhaszn_id INT(10) UNSIGNED NOT NULL,
+    email VARCHAR(30) NOT NULL,
+    targy VARCHAR(50) NOT NULL,
+    uzenet VARCHAR(300) NOT NULL,
+    datum datetime NOT NULL,
+
+    CONSTRAINT uzenetek_fk
+        FOREIGN KEY (felhaszn_id)
+        REFERENCES felhasznalok(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+)
+ENGINE=InnoDB
+CHARACTER SET utf8 COLLATE utf8_general_ci;
+
