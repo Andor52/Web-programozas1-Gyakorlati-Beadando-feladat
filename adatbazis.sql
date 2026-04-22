@@ -46,3 +46,18 @@ CREATE TABLE uzenetek (
 ENGINE=InnoDB
 CHARACTER SET utf8 COLLATE utf8_general_ci;
 
+CREATE TABLE kepfeltolt (
+    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    felhaszn_id INT(10) UNSIGNED NOT NULL,
+    tipus VARCHAR(15) NOT NULL,
+    nev VARCHAR(40) NOT NULL,
+    kep LONGBLOB NOT NULL,
+
+    CONSTRAINT kepek_fk
+        FOREIGN KEY (felhaszn_id)
+        REFERENCES felhasznalok(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+)
+ENGINE=InnoDB
+CHARACTER SET utf8 COLLATE utf8_general_ci;
