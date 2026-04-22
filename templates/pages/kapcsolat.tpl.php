@@ -29,7 +29,7 @@
             <label>Rövid információ miért kesett minket:</label><br>
             <input type="text" id="targy" name="targy" placeholder="Tárgy"><br><br>
             <label>Üzenet:</label><br>
-            <textarea id="uzenet" name="uzenet" placeholder="Üzenet" cols="100" rows="4"></textarea><br><br>
+            <textarea id="uzenet" name="uzenet" placeholder="Üzenet"></textarea><br><br>
             <button type="submit" id="submit">Üzenetet küldök - Várom a választ</button>
         </form>
     </div>
