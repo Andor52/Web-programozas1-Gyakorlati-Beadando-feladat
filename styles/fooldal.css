@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel img {
+    object-fit: cover;
+    height: 65vh;
+}
+
+
+.fooldal {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.fooldal h2,
+.fooldal h3 {
+    margin-top: 2rem;
+    color: #0a3d62;
+}
+
+.fooldal p {
+    max-width: 70ch;
+}
+
+.videos {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.video-row {
+    flex: 1;
+}
+
+.video-item {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-item p {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+video,
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.fooldal iframe[src*="google.com/maps"] {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 4 / 3;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+}
+
+.fooldal a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0a3d62;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.fooldal a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .carousel img {
+        height: 50vh;
+    }
+
+    .videos {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel img {
+        height: 40vh;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .videos {
+        flex-direction: column;
+    }
+
+    .fooldal p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel img {
+        height: 30vh;
+    }
+}
