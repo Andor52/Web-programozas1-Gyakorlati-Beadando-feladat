@@ -9,7 +9,7 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="./images/siofok.jpg"
-                 alt="Webfejlesztés"
+                 alt="Siófok katamarán"
                  class="d-block w-100">
             <div class="carousel-caption">
                 <h3>Bahart</h3>
@@ -19,7 +19,7 @@
 
         <div class="carousel-item">
             <img src="./images/fured.jpg"
-                 alt="Kód szerkesztés"
+                 alt="Füred katamarán"
                  class="d-block w-100">
             <div class="carousel-caption">
                 <h3>Bahart</h3>
@@ -29,7 +29,7 @@
 
         <div class="carousel-item">
             <img src="./images/badacsony.jpg"
-                 alt="Programozás"
+                 alt="Badacsony katamarán"
                  class="d-block w-100">
             <div class="carousel-caption">
                 <h3>Bahart</h3>
