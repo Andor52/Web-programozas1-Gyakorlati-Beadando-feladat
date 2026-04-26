@@ -1,0 +1,90 @@
+.admin {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.admin h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0a3d62;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0a3d62;
+}
+
+table.uzenetek {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+table.uzenetek th,
+table.uzenetek td {
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.uzenetek th {
+   background-color: #06818d;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+table.uzenetek tr:nth-child(even) {
+    background-color: #9ad7dd;
+}
+
+table.uzenetek tr:hover {
+    background-color: #4bbac4;
+}
+
+table.uzenetek td {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+
+    table.uzenetek,
+    table.uzenetek tbody,
+    table.uzenetek tr,
+    table.uzenetek td {
+        display: block;
+        width: 100%;
+    }
+
+    table.uzenetek thead {
+        display: none;
+    }
+
+    table.uzenetek tr {
+        margin-bottom: 1.2rem;
+        border-radius: 0.75rem;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 1rem;
+    }
+
+    table.uzenetek td {
+        border: none;
+        padding: 0.4rem 0;
+    }
+
+    table.uzenetek td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: 600;
+        color: #0a3d62;
+        margin-bottom: 0.15rem;
+    }
+}
