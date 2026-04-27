@@ -15,6 +15,10 @@
 		<h1><?= $fejlec['cim'] ?></h1>
 		<?php if (isset($fejlec['motto'])) { ?><h2><?= $fejlec['motto'] ?></h2><?php } ?>
 		<?php if(isset($_SESSION['login'])) { ?>Bejelentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?>
+		<div class="mobilnezet">
+			<button id="menurendszer">☰</button>
+			<span>Menü</span>
+		</div>
 	</header>
     <div id="wrapper">
         <aside id="nav">
@@ -41,4 +45,5 @@
         <?php if(isset($lablec['ceg'])) { ?><?= $lablec['ceg']; ?><?php } ?>
     </footer>
 </body>
+<script src="./script/fooldal.js"></script>
 </html>

@@ -1,7 +1,4 @@
-<div class="header">
-        <h1>Fetch API menüs megvalósítás</h1>
-</div>
-    <div class="main">
+<div class="main">
         <form id="felhasznalo">
             <h3>Új cég hozzáadása / szerkesztése</h3>
             <label for="nev">Cég neve</label><br>
